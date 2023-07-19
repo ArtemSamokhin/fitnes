@@ -1206,6 +1206,10 @@ button,
   color: #15ab07;
 }
 
+.main-header__wrapper {
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.2363382578deg, #B80027 313.3060026169deg);
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
