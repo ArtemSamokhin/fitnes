@@ -6,3 +6,24 @@
   font-display: swap;
   src: url("../fonts/.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "Alumni Sans";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../../fonts/AlumniSans-Bold.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../../fonts/RobotoCondensed-Regular.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../../fonts/RobotoCondensed-Bold.ttf") format("ttf")
+}

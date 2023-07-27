@@ -1,0 +1,6 @@
+.hero__image {
+  @media(max-width: $vp-768) {
+    width: 0;
+    height: 0;
+  }
+}
