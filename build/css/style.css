@@ -325,19 +325,19 @@ template {
   font-family: "Alumni Sans";
   font-weight: 600;
   font-style: normal;
-  src: url("../../fonts/AlumniSans-Bold.ttf") format("ttf");
+  src: url("../../fonts/AlumniSans-Bold.ttf");
 }
 @font-face {
   font-family: "Roboto Condensed";
   font-weight: 300;
   font-style: normal;
-  src: url("../../fonts/RobotoCondensed-Regular.ttf") format("ttf");
+  src: url("../../fonts/RobotoCondensed-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto Condensed";
   font-weight: 700;
   font-style: normal;
-  src: url("../../fonts/RobotoCondensed-Bold.ttf") format("ttf");
+  src: url("../../fonts/RobotoCondensed-Bold.ttf");
 }
 *,
 *::before,
@@ -1282,11 +1282,101 @@ footer {
   letter-spacing: 0.78px;
 }
 
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+}
+
 @media (max-width: 768px) {
   .hero__image {
     width: 0;
     height: 0;
   }
+}
+
+.hero__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hero__city {
+  width: 11%;
+  font-family: Alumni Sans;
+  font-size: 48px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__main-title {
+  text-align: right;
+  font-family: Alumni Sans;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.6px;
+}
+
+.hero__description {
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__button {
+  width: 230px;
+  height: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: #ffffff solid 4px;
 }
 
 /* @mixin hover-focus {
