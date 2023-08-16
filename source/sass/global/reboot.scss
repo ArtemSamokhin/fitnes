@@ -12,11 +12,12 @@ body {
 }
 
 html {
+  font-family: $roboto-condensed;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
+  font-size: 16px;
   color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
@@ -126,4 +127,23 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+}
+
+header,
+main,
+footer {
+  @media (min-width: $vp-320) and (max-width: $vp-768) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: $vp-768) and (max-width: $vp-1200) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding-left: 103px;
+    padding-right: 103px;
+  }
 }
