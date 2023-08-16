@@ -1,9 +1,15 @@
 .hero {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
   color: #ffffff;
+  margin-top: -21px;
+  margin-bottom: 51px;
 }
 
 .hero__image {
+  grid-column-start: 6;
+  grid-column-end: 9;
+
   @media(max-width: $vp-768) {
     width: 0;
     height: 0;
@@ -11,51 +17,58 @@
 }
 
 .hero__text-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-column-start: 2;
+  grid-column-end: 5;
 }
 
 .hero__city {
-  width: 11%;
-  font-family: Alumni Sans;
+  font-family: $alumni-sans;
   font-size: 48px;
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.44px;
   text-transform: uppercase;
+  text-align: right;
+  margin: 0;
+  grid-column-start: 7;
+  grid-column-end: 10;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: end;
 }
 
 .hero__main-title {
-  text-align: right;
-  font-family: Alumni Sans;
+  font-family: $alumni-sans;
   font-size: 92px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-align: right;
   letter-spacing: 4.6px;
+  margin: 0;
+  grid-column-start: 4;
+  grid-column-end: 11;
+  display: flex;
+  align-items: center;
 }
 
 .hero__description {
-  text-align: right;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin: 0;
+  text-align: right;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .hero__button {
-  width: 230px;
   height: 57px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -65,4 +78,6 @@
   color: #ffffff;
   background-color: transparent;
   border: #ffffff solid 4px;
+  grid-column-start: 5;
+  grid-column-end: 11;
 }
