@@ -27,6 +27,7 @@
 .hero__city {
   font-family: $alumni-sans;
   font-size: 48px;
+  font-weight: 600;
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.44px;
@@ -77,6 +78,7 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: transparent;
+  cursor: pointer;
   border: #ffffff solid 4px;
   grid-column-start: 5;
   grid-column-end: 11;
