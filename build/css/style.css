@@ -1267,7 +1267,7 @@ footer {
 
 .main-header__logo {
   font-family: "Alumni Sans", "Arial", sans-serif;
-  color: #FFF;
+  color: #ffffff;
   font-weight: 600;
   line-height: normal;
 }
@@ -1291,7 +1291,7 @@ footer {
 }
 
 .main-header__phone {
-  color: #FFF;
+  color: #ffffff;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   line-height: normal;
@@ -1718,12 +1718,19 @@ footer {
   z-index: 3;
   border-radius: 50%;
   border: none;
-  background: linear-gradient(83deg, #003D85 0%, #B80027 88.54%);
-  width: 52px;
-  height: 52px;
+  background: linear-gradient(83deg, #003d85 0%, #b80027 88.54%);
   padding: 0;
   cursor: pointer;
+  width: 52px;
+  height: 52px;
 }
+@media (min-width: 1200px) {
+  .gallery__video-button {
+    width: 72px;
+    height: 72px;
+  }
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
