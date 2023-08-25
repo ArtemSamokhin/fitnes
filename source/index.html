@@ -21,7 +21,7 @@
         <div class="hero__text-container">
           <p class="hero__city">Омск</p>
           <p class="hero__description">Тренажёрный зал <br>Групповые занятия <br>Кардио-зона</p>
-          <h1 class="hero__main-title">Фитнес центр</h1>
+          <h1 class="hero__main-title">Фитнес<br> центр</h1>
           <button class="hero__button">Купить абонемент</button>
         </div>
         <div class="hero__image">
@@ -39,8 +39,50 @@
         </div>
       </section>
     </header>
-    <main>
-
+    <main class="main-page">
+      <section class="main-page__gallery gallery">
+        <div class="gallery__text">
+          <h3 class="gallery__text-title">Тренажерный зал</h3>
+          <h4 class="gallery__text-subtitle">Просторный зал площадью 900 кв/м</h4>
+          <p class="gallery__text-description">Supergym – самый большой фитнес центр за Уралом и идеальное место для
+            укрепления тела и здоровья.
+            Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p class="gallery__text-description">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре
+            есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+        <div class="gallery__photo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/gym/gym-desktop.webp 1x, img/gym/gym-desktop@2x.webp 2x"
+              type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/gym/gym-tablet.webp 1x, img/gym/gym-tablet@2x.webp 2x"
+              type="image/webp">
+            <source media="(min-width: 320px)" srcset="img/gym/gym-mobile.webp 1x, img/gym/gym-mobile@2x.webp 2x"
+              type="image/webp">
+            <source media="(min-width: 12000px)" srcset="img/gym/gym-desktop.jpg 1x, img/gym/gym-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/gym/gym-tablet.jpg 1x, img/gym/gym-tablet@2x.jpg 2x">
+            <img src="img/gym/gym-mobile.jpg" srcset="img/gym/gym-mobile@2x.jpg" width="320" height="313">
+          </picture>
+        </div>
+        <div class="gallery__video">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/video/video-desktop.webp 1x, img/video/video-desktop@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)"
+              srcset="img/video/video-tablet.webp 1x, img/video/video-tablet@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 320px)"
+              srcset="img/video/video-mobile.webp 1x, img/video/video-mobile@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 12000px)"
+              srcset="img/video/video-desktop.jpg 1x, img/video/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video/video-tablet.jpg 1x, img/video/video-tablet@2x.jpg 2x">
+            <img src="img/video/video-mobile.jpg" srcset="img/video/video-mobile@2x.jpg" width="320" height="167">
+          </picture>
+          <button class="gallery__video-button">
+            <svg width="12" height="12">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container"></div>
