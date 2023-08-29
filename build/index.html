@@ -87,44 +87,50 @@
       <section class="main-page__abonements abonements">
         <h2 class="abonements__title">Абонементы</h2>
         <ol class="abonements__lasting-list">
-          <li class="abonements__lasting-item">1 месяц</li>
-          <li class="abonements__lasting-item">6 месяцев</li>
-          <li class="abonements__lasting-item">12 месяцев</li>
+          <li class="abonements__lasting-item abonements__lasting-item--active">
+            <a class="abonements__lasting-link abonements__lasting-link--active" href="#">1 месяц</a>
+          </li>
+          <li class="abonements__lasting-item">
+            <a class="abonements__lasting-link" href="#">6 месяцев</a>
+          </li>
+          <li class="abonements__lasting-item">
+            <a class="abonements__lasting-link" href="#">12 месяцев</a>
+          </li>
         </ol>
         <ul class="abonements__type-list">
           <li class="abonements__type-item">
             <h2 class="abonements__type-title">С тренером</h2>
             <p class="abonements__type-time">12 занятий</p>
-            <p class="abonements__type-price">5000
-              <b>
-                <svg width="12" height="12">
+            <p class="abonements__type-price" data-price="5000">5000
+              <span class="abonements__type-currency">
+                <svg width="30" height="42">
                   <use xlink:href="img/sprite.svg#ruble"></use>
                 </svg>
-              </b>
+              </span>
             </p>
             <button class="abonements__type-button">купить абонемент</button>
           </li>
-          <li class="abonements__type-item">
+          <li class="abonements__type-item abonements__type-item--active">
             <h2 class="abonements__type-title">Дневной</h2>
             <p class="abonements__type-time">с 8:00 до 17:00 </p>
-            <p class="abonements__type-price">1700
-              <b>
-                <svg width="12" height="12">
+            <p class="abonements__type-price" data-price="1700">1700
+              <span class="abonements__type-currency">
+                <svg width="30" height="42">
                   <use xlink:href="img/sprite.svg#ruble"></use>
                 </svg>
-              </b>
+              </span>
             </p>
-            <button class="abonements__type-button">купить абонемент</button>
+            <button class="abonements__type-button abonements__type-button--active">купить абонемент</button>
           </li>
           <li class="abonements__type-item">
             <h2 class="abonements__type-title">Полный день</h2>
             <p class="abonements__type-time">с 8:00 до 22:00 </p>
-            <p class="abonements__type-price">2700
-              <b>
-                <svg width="12" height="12">
+            <p class="abonements__type-price" data-price="2700">2700
+              <span class="abonements__type-currency">
+                <svg width="30" height="42">
                   <use xlink:href="img/sprite.svg#ruble"></use>
                 </svg>
-              </b>
+              </span>
             </p>
             <button class="abonements__type-button">купить абонемент</button>
           </li>
