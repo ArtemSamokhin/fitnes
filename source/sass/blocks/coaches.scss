@@ -24,18 +24,69 @@
 }
 
 .coaches__item {
-  @media (min-width: $vp-320) and (max-width: $vp-768) {
-
-  }
+  position: relative;
 
   @media (min-width: $vp-768) and (max-width: $vp-1200) {
+
     &:nth-child(1),
     &:nth-child(2) {
       display: none;
     }
   }
+}
 
-  @media (min-width: $vp-1200) {
+.coaches__title {
+  font-family: $alumni-sans;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+  margin: 0;
+  margin-bottom: 48px;
+}
 
-  }
+.coaches__photo {
+  position: relative;
+}
+
+.coaches__name {
+  margin: 0;
+  position: absolute;
+  bottom: 25px;
+  left: 69px;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.coaches__active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(16, 38, 84, 0.89);
+  color: #ffffff;
+  text-align: center;
+}
+
+.coaches__active-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.coaches__active-text {
+  color: #b6bdcc;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.coaches__active-list {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
 }

@@ -1846,20 +1846,20 @@ footer {
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .abonements__lasting-list {
-    width: 90%;
+    width: 100%;
     margin-bottom: 55px;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .abonements__lasting-list {
     margin-bottom: 65px;
-    width: 60%;
+    width: 70%;
   }
 }
 @media (min-width: 1200px) {
   .abonements__lasting-list {
     margin-bottom: 59px;
-    width: 30%;
+    width: 25%;
   }
 }
 .abonements__lasting-list::after {
@@ -2102,11 +2102,71 @@ footer {
   }
 }
 
+.coaches__item {
+  position: relative;
+}
 @media (min-width: 768px) and (max-width: 1200px) {
   .coaches__item:nth-child(1), .coaches__item:nth-child(2) {
     display: none;
   }
 }
+
+.coaches__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.coaches__photo {
+  position: relative;
+}
+
+.coaches__name {
+  margin: 0;
+  position: absolute;
+  bottom: 25px;
+  left: 69px;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.coaches__active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(16, 38, 84, 0.89);
+  color: #ffffff;
+  text-align: center;
+}
+
+.coaches__active-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.coaches__active-text {
+  color: #b6bdcc;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.coaches__active-list {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
