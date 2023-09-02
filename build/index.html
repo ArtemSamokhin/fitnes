@@ -85,54 +85,103 @@
         </div>
       </section>
       <section class="main-page__abonements abonements">
-        <h2 class="abonements__title">Абонементы</h2>
-        <ol class="abonements__lasting-list">
-          <li class="abonements__lasting-item abonements__lasting-item--active">
-            <a class="abonements__lasting-link abonements__lasting-link--active" href="#">1 месяц</a>
+          <h2 class="abonements__title">Абонементы</h2>
+          <ol class="abonements__lasting-list">
+            <li class="abonements__lasting-item abonements__lasting-item--active">
+              <a class="abonements__lasting-link abonements__lasting-link--active" href="#">1 месяц</a>
+            </li>
+            <li class="abonements__lasting-item">
+              <a class="abonements__lasting-link" href="#">6 месяцев</a>
+            </li>
+            <li class="abonements__lasting-item">
+              <a class="abonements__lasting-link" href="#">12 месяцев</a>
+            </li>
+          </ol>
+          <ul class="abonements__type-list">
+            <li class="abonements__type-item">
+              <h2 class="abonements__type-title">С тренером</h2>
+              <p class="abonements__type-time">12 занятий</p>
+              <p class="abonements__type-price" data-price="5000">5000
+                <span class="abonements__type-currency">
+                  <svg width="30" height="42">
+                    <use xlink:href="img/sprite.svg#ruble"></use>
+                  </svg>
+                </span>
+              </p>
+              <button class="abonements__type-button">купить абонемент</button>
+            </li>
+            <li class="abonements__type-item abonements__type-item--active">
+              <h2 class="abonements__type-title">Дневной</h2>
+              <p class="abonements__type-time">с 8:00 до 17:00 </p>
+              <p class="abonements__type-price" data-price="1700">1700
+                <span class="abonements__type-currency">
+                  <svg width="30" height="42">
+                    <use xlink:href="img/sprite.svg#ruble"></use>
+                  </svg>
+                </span>
+              </p>
+              <button class="abonements__type-button abonements__type-button--active">купить абонемент</button>
+            </li>
+            <li class="abonements__type-item">
+              <h2 class="abonements__type-title">Полный день</h2>
+              <p class="abonements__type-time">с 8:00 до 22:00 </p>
+              <p class="abonements__type-price" data-price="2700">2700
+                <span class="abonements__type-currency">
+                  <svg width="30" height="42">
+                    <use xlink:href="img/sprite.svg#ruble"></use>
+                  </svg>
+                </span>
+              </p>
+              <button class="abonements__type-button">купить абонемент</button>
+            </li>
+          </ul>
+      </section>
+      <section class="main-page__coaches coaches">
+        <h2 class="coaches__title">Тренеры</h2>
+        <ul class="coaches__list">
+          <li class="coaches__item">
+            <div class="coaches__photo">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/coaches/coaches-1-desktop.webp 1x, img/coaches/coaches-1-desktop@2x.webp 2x"
+                  type="image/webp">
+                <img src="img/coaches/coaches-1-desktop.jpg" srcset="img/coaches/coaches-1-desktop@2x.jpg" width="260"
+                  height="294">
+              </picture>
+            </div>
           </li>
-          <li class="abonements__lasting-item">
-            <a class="abonements__lasting-link" href="#">6 месяцев</a>
+          <li class="coaches__item">
+            <div class="coaches__photo">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/coaches/coaches-2-desktop.webp 1x, img/coaches/coaches-2-desktop@2x.webp 2x"
+                  type="image/webp">
+                <img src="img/coaches/coaches-2-desktop.jpg" srcset="img/coaches/coaches-2-desktop@2x.jpg" width="260"
+                  height="294">
+              </picture>
+            </div>
           </li>
-          <li class="abonements__lasting-item">
-            <a class="abonements__lasting-link" href="#">12 месяцев</a>
+          <li class="coaches__item">
+            <div class="coaches__photo">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/coaches/coaches-3-desktop.webp 1x, img/coaches/coaches-3-desktop@2x.webp 2x"
+                  type="image/webp">
+                <img src="img/coaches/coaches-3-desktop.jpg" srcset="img/coaches/coaches-3-desktop@2x.jpg" width="260"
+                  height="294">
+              </picture>
+            </div>
           </li>
-        </ol>
-        <ul class="abonements__type-list">
-          <li class="abonements__type-item">
-            <h2 class="abonements__type-title">С тренером</h2>
-            <p class="abonements__type-time">12 занятий</p>
-            <p class="abonements__type-price" data-price="5000">5000
-              <span class="abonements__type-currency">
-                <svg width="30" height="42">
-                  <use xlink:href="img/sprite.svg#ruble"></use>
-                </svg>
-              </span>
-            </p>
-            <button class="abonements__type-button">купить абонемент</button>
-          </li>
-          <li class="abonements__type-item abonements__type-item--active">
-            <h2 class="abonements__type-title">Дневной</h2>
-            <p class="abonements__type-time">с 8:00 до 17:00 </p>
-            <p class="abonements__type-price" data-price="1700">1700
-              <span class="abonements__type-currency">
-                <svg width="30" height="42">
-                  <use xlink:href="img/sprite.svg#ruble"></use>
-                </svg>
-              </span>
-            </p>
-            <button class="abonements__type-button abonements__type-button--active">купить абонемент</button>
-          </li>
-          <li class="abonements__type-item">
-            <h2 class="abonements__type-title">Полный день</h2>
-            <p class="abonements__type-time">с 8:00 до 22:00 </p>
-            <p class="abonements__type-price" data-price="2700">2700
-              <span class="abonements__type-currency">
-                <svg width="30" height="42">
-                  <use xlink:href="img/sprite.svg#ruble"></use>
-                </svg>
-              </span>
-            </p>
-            <button class="abonements__type-button">купить абонемент</button>
+          <li class="coaches__item">
+            <div class="coaches__photo">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/coaches/coaches-4-desktop.webp 1x, img/coaches/coaches-4-desktop@2x.webp 2x"
+                  type="image/webp">
+                <img src="img/coaches/coaches-4-desktop.jpg" srcset="img/coaches/coaches-4-desktop@2x.jpg" width="260"
+                  height="294">
+              </picture>
+            </div>
           </li>
         </ul>
       </section>

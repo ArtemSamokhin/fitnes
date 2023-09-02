@@ -1,0 +1,41 @@
+.coaches {
+  padding: 105px 0;
+}
+
+.coaches__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+
+  @media (min-width: $vp-320) and (max-width: $vp-768) {
+    display: block;
+  }
+
+  @media (min-width: $vp-768) and (max-width: $vp-1200) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+
+  @media (min-width: $vp-1200) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+  }
+}
+
+.coaches__item {
+  @media (min-width: $vp-320) and (max-width: $vp-768) {
+
+  }
+
+  @media (min-width: $vp-768) and (max-width: $vp-1200) {
+    &:nth-child(1),
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $vp-1200) {
+
+  }
+}
