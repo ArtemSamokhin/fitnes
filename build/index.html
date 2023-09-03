@@ -85,118 +85,136 @@
         </div>
       </section>
       <section class="main-page__abonements abonements">
-          <h2 class="abonements__title">Абонементы</h2>
-          <ol class="abonements__lasting-list">
-            <li class="abonements__lasting-item abonements__lasting-item--active">
-              <a class="abonements__lasting-link abonements__lasting-link--active" href="#">1 месяц</a>
-            </li>
-            <li class="abonements__lasting-item">
-              <a class="abonements__lasting-link" href="#">6 месяцев</a>
-            </li>
-            <li class="abonements__lasting-item">
-              <a class="abonements__lasting-link" href="#">12 месяцев</a>
-            </li>
-          </ol>
-          <ul class="abonements__type-list">
-            <li class="abonements__type-item">
-              <h2 class="abonements__type-title">С тренером</h2>
-              <p class="abonements__type-time">12 занятий</p>
-              <p class="abonements__type-price" data-price="5000">5000
-                <span class="abonements__type-currency">
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite.svg#ruble"></use>
-                  </svg>
-                </span>
-              </p>
-              <button class="abonements__type-button">купить абонемент</button>
-            </li>
-            <li class="abonements__type-item abonements__type-item--active">
-              <h2 class="abonements__type-title">Дневной</h2>
-              <p class="abonements__type-time">с 8:00 до 17:00 </p>
-              <p class="abonements__type-price" data-price="1700">1700
-                <span class="abonements__type-currency">
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite.svg#ruble"></use>
-                  </svg>
-                </span>
-              </p>
-              <button class="abonements__type-button abonements__type-button--active">купить абонемент</button>
-            </li>
-            <li class="abonements__type-item">
-              <h2 class="abonements__type-title">Полный день</h2>
-              <p class="abonements__type-time">с 8:00 до 22:00 </p>
-              <p class="abonements__type-price" data-price="2700">2700
-                <span class="abonements__type-currency">
-                  <svg width="30" height="42">
-                    <use xlink:href="img/sprite.svg#ruble"></use>
-                  </svg>
-                </span>
-              </p>
-              <button class="abonements__type-button">купить абонемент</button>
-            </li>
-          </ul>
+        <h2 class="abonements__title">Абонементы</h2>
+        <ol class="abonements__lasting-list">
+          <li class="abonements__lasting-item abonements__lasting-item--active">
+            <a class="abonements__lasting-link abonements__lasting-link--active" href="#">1 месяц</a>
+          </li>
+          <li class="abonements__lasting-item">
+            <a class="abonements__lasting-link" href="#">6 месяцев</a>
+          </li>
+          <li class="abonements__lasting-item">
+            <a class="abonements__lasting-link" href="#">12 месяцев</a>
+          </li>
+        </ol>
+        <ul class="abonements__type-list">
+          <li class="abonements__type-item">
+            <h2 class="abonements__type-title">С тренером</h2>
+            <p class="abonements__type-time">12 занятий</p>
+            <p class="abonements__type-price" data-price="5000">5000
+              <span class="abonements__type-currency">
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+              </span>
+            </p>
+            <button class="abonements__type-button">купить абонемент</button>
+          </li>
+          <li class="abonements__type-item abonements__type-item--active">
+            <h2 class="abonements__type-title">Дневной</h2>
+            <p class="abonements__type-time">с 8:00 до 17:00 </p>
+            <p class="abonements__type-price" data-price="1700">1700
+              <span class="abonements__type-currency">
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+              </span>
+            </p>
+            <button class="abonements__type-button abonements__type-button--active">купить абонемент</button>
+          </li>
+          <li class="abonements__type-item">
+            <h2 class="abonements__type-title">Полный день</h2>
+            <p class="abonements__type-time">с 8:00 до 22:00 </p>
+            <p class="abonements__type-price" data-price="2700">2700
+              <span class="abonements__type-currency">
+                <svg width="30" height="42">
+                  <use xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+              </span>
+            </p>
+            <button class="abonements__type-button">купить абонемент</button>
+          </li>
+        </ul>
       </section>
       <section class="main-page__coaches coaches">
         <h2 class="coaches__title">Тренеры</h2>
+        <button class="coaches__button-back">
+          <svg width="10" height="19">
+            <use xlink:href="img/sprite.svg#button-back"></use>
+          </svg>
+        </button>
         <ul class="coaches__list">
           <li class="coaches__item">
-            <div class="coaches__photo">
-              <picture>
-                <source media="(min-width: 1200px)"
-                  srcset="img/coaches/coaches-1-desktop.webp 1x, img/coaches/coaches-1-desktop@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/coaches/coaches-1-desktop.jpg" srcset="img/coaches/coaches-1-desktop@2x.jpg" width="260"
-                  height="294">
-              </picture>
-              <h3 class="coaches__name">Анна Павлова</h3>
-            </div>
+            <a class="coaches__link" href="#">
+              <div class="coaches__photo">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/coaches/coaches-1-desktop.webp 1x, img/coaches/coaches-1-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/coaches/coaches-1-desktop.jpg" srcset="img/coaches/coaches-1-desktop@2x.jpg" width="260"
+                    height="294">
+                </picture>
+                <h3 class="coaches__name">Анна Павлова</h3>
+              </div>
+            </a>
           </li>
           <li class="coaches__item">
-            <div class="coaches__photo">
-              <picture>
-                <source media="(min-width: 1200px)"
-                  srcset="img/coaches/coaches-2-desktop.webp 1x, img/coaches/coaches-2-desktop@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/coaches/coaches-2-desktop.jpg" srcset="img/coaches/coaches-2-desktop@2x.jpg" width="260"
-                  height="294">
-              </picture>
-              <h3 class="coaches__name">Алексей Лавров</h3>
-            </div>
+            <a class="coaches__link" href="#">
+              <div class="coaches__photo">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/coaches/coaches-2-desktop.webp 1x, img/coaches/coaches-2-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/coaches/coaches-2-desktop.jpg" srcset="img/coaches/coaches-2-desktop@2x.jpg" width="260"
+                    height="294">
+                </picture>
+                <h3 class="coaches__name">Алексей Лавров</h3>
+              </div>
+            </a>
           </li>
           <li class="coaches__item">
-            <div class="coaches__photo">
-              <picture>
-                <source media="(min-width: 1200px)"
-                  srcset="img/coaches/coaches-3-desktop.webp 1x, img/coaches/coaches-3-desktop@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/coaches/coaches-3-desktop.jpg" srcset="img/coaches/coaches-3-desktop@2x.jpg" width="260"
-                  height="294">
-              </picture>
-              <h3 class="coaches__name">Александр Пашков</h3>
-            </div>
-            <div class="coaches__active">
-              <h3 class="coaches__active-title">Александр Пашков</h3>
-              <p class="coaches__active-text">CrossFit</p>
-              <ul class="coaches__active-list">
-                <li class="coaches__active-item">Certified Level 3 Trainer</li>
-                <li class="coaches__active-item">Победитель чемпионата России по CrossFit</li>
-                <li class="coaches__active-item">Опыт — 6 лет</li>
-              </ul>
-            </div>
+            <a class="coaches__link" href="#">
+              <div class="coaches__photo">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/coaches/coaches-3-desktop.webp 1x, img/coaches/coaches-3-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/coaches/coaches-3-desktop.jpg" srcset="img/coaches/coaches-3-desktop@2x.jpg" width="260"
+                    height="294">
+                </picture>
+                <h3 class="coaches__name">Александр Пашков</h3>
+              </div>
+              <div class="coaches__active">
+                <h3 class="coaches__active-title">Александр Пашков</h3>
+                <p class="coaches__active-text">CrossFit</p>
+                <ul class="coaches__active-list">
+                  <li class="coaches__active-item">Certified Level 3 Trainer</li>
+                  <li class="coaches__active-item">Победитель чемпионата России по CrossFit</li>
+                  <li class="coaches__active-item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </a>
           </li>
           <li class="coaches__item">
-            <div class="coaches__photo">
-              <picture>
-                <source media="(min-width: 1200px)"
-                  srcset="img/coaches/coaches-4-desktop.webp 1x, img/coaches/coaches-4-desktop@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/coaches/coaches-4-desktop.jpg" srcset="img/coaches/coaches-4-desktop@2x.jpg" width="260"
-                  height="294">
-              </picture>
-              <h3 class="coaches__name">Мария Кетова</h3>
-            </div>
+            <a class="coaches__link" href="#">
+              <div class="coaches__photo">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/coaches/coaches-4-desktop.webp 1x, img/coaches/coaches-4-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/coaches/coaches-4-desktop.jpg" srcset="img/coaches/coaches-4-desktop@2x.jpg" width="260"
+                    height="294">
+                </picture>
+                <h3 class="coaches__name">Мария Кетова</h3>
+              </div>
+            </a>
           </li>
         </ul>
+        <button class="coaches__button-next">
+          <svg width="10" height="19">
+            <use xlink:href="img/sprite.svg#button-next"></use>
+          </svg>
+        </button>
       </section>
     </main>
     <footer>

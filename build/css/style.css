@@ -1606,7 +1606,7 @@ footer {
     width: 364px;
     height: 228px;
     position: absolute;
-    left: 40%;
+    left: 37%;
     top: 60%;
     z-index: 1;
   }
@@ -2069,6 +2069,11 @@ footer {
 
 .coaches {
   padding: 105px 0;
+  position: relative;
+}
+
+.coaches__link {
+  cursor: pointer;
 }
 
 .coaches__list {
@@ -2096,9 +2101,9 @@ footer {
   .coaches__list {
     -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
-    -webkit-column-gap: 40px;
-       -moz-column-gap: 40px;
-            column-gap: 40px;
+    -webkit-column-gap: 3%;
+       -moz-column-gap: 3%;
+            column-gap: 3%;
   }
 }
 
@@ -2108,6 +2113,12 @@ footer {
 @media (min-width: 768px) and (max-width: 1200px) {
   .coaches__item:nth-child(1), .coaches__item:nth-child(2) {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .coaches__item {
+    max-width: 260px;
+    max-height: 294px;
   }
 }
 
@@ -2143,12 +2154,14 @@ footer {
   top: 0;
   bottom: 0;
   right: 0;
+  padding: 17%;
   background-color: rgba(16, 38, 84, 0.89);
   color: #ffffff;
   text-align: center;
 }
 
 .coaches__active-title {
+  margin: 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 150%;
@@ -2159,12 +2172,59 @@ footer {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .coaches__active-list {
+  text-align: left;
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
+  padding: 0;
+  list-style-type: disc;
+}
+
+@media (min-width: 1200px) {
+  .coaches__active-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.coaches__button-back,
+.coaches__button-next {
+  position: absolute;
+  padding: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .coaches__button-back svg,
+.coaches__button-next svg {
+    width: 16px;
+    height: 32px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .coaches__button-back svg,
+.coaches__button-next svg {
+    width: 16px;
+    height: 32px;
+  }
+}
+
+.coaches__button-back {
+  left: -80px;
+  top: 55%;
+}
+
+.coaches__button-next {
+  right: -80px;
+  top: 55%;
 }
 
 /* @mixin hover-focus {
