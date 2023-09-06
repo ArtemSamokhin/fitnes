@@ -1904,7 +1904,7 @@ footer {
     content: "";
     position: absolute;
     right: -163px;
-    bottom: -15%;
+    bottom: -14%;
     width: 347px;
     height: 444px;
     background-image: url("../img/background/background-tablet.png");
@@ -2267,6 +2267,79 @@ footer {
   .coaches__button-next {
     right: -80px;
   }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .super-games {
+    padding-top: 70px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .super-games {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .super-games {
+    padding-top: 120px;
+  }
+}
+
+.super-games__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .super-games__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.super-games__text-block {
+  background-color: #ed0233;
+  color: #ffffff;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .super-games__text-block {
+    width: 100%;
+    padding: 50px 44px;
+    min-height: 292px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .super-games__text-block {
+    width: 45%;
+    padding: 51px 45px;
+  }
+}
+@media (min-width: 1200px) {
+  .super-games__text-block {
+    width: 40%;
+    padding: 85px 79px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .super-games__image {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .super-games__image {
+    width: 55%;
+  }
+}
+@media (min-width: 1200px) {
+  .super-games__image {
+    width: 60%;
+  }
+}
+.super-games__image img {
+  width: 100%;
+  height: 100%;
 }
 
 /* @mixin hover-focus {
